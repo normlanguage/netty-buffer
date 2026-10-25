@@ -1,0 +1,17 @@
+Module module() {
+  return module(
+    name: "netty.buffer",
+    version: 1,
+    exports: ["buffer.ByteBuf"],
+    dependencies: [dependency(repository: "norm", name: "java.base", version: 1)],
+    binding: jarBinding(
+      target: mavenJar(
+        group: "io.netty",
+        artifact: "netty-buffer",
+        version: "4.2.17.Final",
+        resolution: sha256("0d249178ec0204b35a6ad3e5ac8a6c2ecb3eb496c6cdae40b8eca4fa3cb6a0c7")
+      ),
+      api: [jarType(name: "io.netty.buffer.ByteBuf", alias: "buffer.ByteBuf", members: [])]
+    )
+  )
+}
