@@ -1,7 +1,7 @@
 Module module() {
   return module(
     name: "netty.buffer",
-    version: 1,
+    version: 2,
     exports: ["buffer.ByteBuf"],
     dependencies: [dependency(repository: "norm", name: "java.base", version: 1)],
     binding: jarBinding(
