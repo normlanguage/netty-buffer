@@ -9,7 +9,7 @@ Module module() {
         group: "io.netty",
         artifact: "netty-buffer",
         version: "4.2.17.Final",
-        resolution: sha256("0d249178ec0204b35a6ad3e5ac8a6c2ecb3eb496c6cdae40b8eca4fa3cb6a0c7")
+        resolution: sha256("57ea0732a6fae35e11611f69e627b6dd60bdfa5a503520c91339d72d8605fec3")
       ),
       api: [jarType(name: "io.netty.buffer.ByteBuf", alias: "buffer.ByteBuf", members: [])]
     )
